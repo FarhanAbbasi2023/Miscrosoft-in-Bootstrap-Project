@@ -1,219 +1,426 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   
     <div class="site-wrapper">
-        <div class="container">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/img/ms-logo.png" width="100px" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Microsoft 365</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Teams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Windows</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Surface</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Xbox </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Deals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Small Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Support</a>
+                </li>
+            
+              </ul>
 
-        <header class="header">
-
-            <div class="top-social-bar-wrapper">
-
-                <div class="top-bar">
-                    <ul>
-                        <li><a href="">Works</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-
-                </div>
-
-
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    All Microsoft
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Search<i class="bi bi-search"> </i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cart<i class="bi bi-cart3"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Signin <img src="./assets/img/user.svg" width="32px" height="32px"></a>
+                </li>
+                
+              </ul>
+             
             </div>
             
-                <div class="overlay">
-                    <div class="overlay-inner">
-                        <div class="id1"><h1>Hi, I am John, <br> Creative Technologist</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus molestiae aspernatur, <br>
-                                sed, nam architecto deleniti excepturi iure assumenda nobis eius, repellat rerum ratione <br>
-                                 illum! Rem recusandae possimus ab exercitationem a!</p>
-                            <btn class="download-resume">Download Resume</btn>
-                    </div><!-- /.overlay-inner -->
+          </div>
+          
+        </nav>
+      </div><!-- /.header -->
+      
+      <div class="main">
+        <div class="carousel-banner">
 
-                    <div class="overlay-inner2">
-                        <figure>
-                            <img src="./assets/img/121.jpg">
-                        </figure>
-                    </div><!-- /.overlay-inner -->
-    
-                  </div><!-- /.overlay-->
-
-                       
-
-        </header><!-- /.header -->
-    </div>
-        
-        <main class="section main">
-            <div class="inner-content">
-                <div class="container">
-                    <div class="recent-post">
-                        <h3>Recent Posts</h3>
-                    <div class="view-all>">View all</div>
-                     </div>
-                    
-                    <div class="post-box">
-                        <div class="box">
-                            <div class="box-material">
-                                <h2>Making a design system from scratch.</h2>
-                                <ul>
-                                    <li>12 Feb 2020</li>
-                                    <li>|</li>
-                                    <li>Design, Pattern</li>
-                                </ul> 
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque sed tempore autem similique esse necessitatibus laboriosam ipsa, nisi in accusamus.</p>
-                               
-                            </div><!-- /.box-material -->
-                        </div><!-- /.box -->
-                        <div class="box">
-                            <div class="box-material">
-                                <h2>Creating pixel perfect icons in Figma</h2>
-                                <ul>
-                                    <li>12 Feb 2020</li>
-                                    <li>|</li>
-                                    <li>Figma, Icon Design</li>
-                                </ul> 
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque sed tempore autem similique esse necessitatibus laboriosam ipsa, nisi in accusamus.</p>
-                               
-                            </div><!-- /.box-material -->
-                        </div><!-- /.box -->
-                    </div><!-- /.post -->
-                </div><!-- /.container -->
-
-
-            </div><!-- /.inner-content -->
-    
-            <!-- <section class="post">
-    
-            </section>/.post -->
+          <div id="carouselExampleCaptions" class="carousel slide">
+           
             
             
+            <div class="carousel-inner">
+             
+              <div class="carousel-item active">
+                <img src="./assets/img//slider1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/img/slider2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/img/slider3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/img/slider4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the Fourth slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/img/slider5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the Fourth slide.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+           
+          </div>
+
+        </div><!-- /.carousel -->
+
+       <div class="container">
+        <div class="product-wrapper">
+
+          <div class="mt-5">
             
-            <div class="container">
-              
-                <section class="feature-work">
-
-                    <h3>Featured Work</h3>
-
-                    <div class="inner-feature-work">                   
-                        
-                        <figure class="feature-img"><img src="./assets/img/featuredw1.jpg"></figure>
-
-                        <div class="feature-content">
-                       
-                            <h2>Designinhg Dashboards</h2>
-                              <ul>
-                                 <li><div class="year">2020</div></li>
-                                <li>Dashboard</li>
-                              </ul>     
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quas possimus quo inventore saepe. Sunt non necessitatibus velit laboriosam aut?    </p>                
-
-                              
-         
-                         </div><!-- /.feature-content -->
-                        
-                        
-                    </div><!-- /.inner-feature-work -->
-                   
-                </div><!-- /.feature-content -->
-             
-            </div><!-- /.container -->
-            <div class="container">
-              
-                <section class="feature-work">
-
-               
-
-                    <div class="inner-feature-work">                   
-                        
-                        <figure class="feature-img"><img src="./assets/img/featuredw2.jpg"></figure>
-
-                        <div class="feature-content">
-                       
-                            <h2>Vibrant Portraits of 2020</h2>
-                              <ul>
-                                 <li><div class="year">2018</div></li>
-                                <li>Illustration</li>
-                              </ul>     
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quas possimus quo inventore saepe. Sunt non necessitatibus velit laboriosam aut?    </p>                
-
-                              
-         
-                         </div><!-- /.feature-content -->
-                        
-                        
-                    </div><!-- /.inner-feature-work -->
-                   
-                </div><!-- /.feature-content -->
-             
-            </div><!-- /.container -->
-            <div class="container">
-              
-                <section class="feature-work">
-
-                  
-
-                    <div class="inner-feature-work">                   
-                        
-                        <figure class="feature-img"><img src="./assets/img/featuredw3.jpg"></figure>
-
-                        <div class="feature-content">
-                       
-                            <h2>36 Days of Malayalam type</h2>
-                              <ul>
-                                 <li><div class="year">2018</div></li>
-                                <li>Typography</li>
-                              </ul>     
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quas possimus quo inventore saepe. Sunt non necessitatibus velit laboriosam aut?    </p>                
-
-                              
-         
-                         </div><!-- /.feature-content -->
-                        
-                        
-                    </div><!-- /.inner-feature-work -->
-                   
-                </div><!-- /.feature-content -->
-             
-            </div><!-- /.container -->
-    
-        </main> <!-- /.section main -->
-    
-       <footer class="footer">
-            <div class="social-links">
-                <ul class="nav">
-                    <li><img src="./assets/img/facebook.png"></li>
-                    <li><img src="./assets/img/instagram.png"></li>
-                    <li><img src="./assets/img/twitter.png"></li>
-                    <li><img src="./assets/img/instagram.png"></li>
-
-
-                </ul>
+            <div class="row">
+                          
+            <div class="col-md-3"> 
+               <div class="card">
+                  <img src="./assets/img/msp1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Designed for life today – and tomorrow</h5>
+                    <p class="card-text">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
+                    <a href="#" class="card-button">See if your PC is ready ></a>
                 
-            </div><!-- /.social-links -->
+              </div><!-- /.card -->
+            </div><!-- /.col-md-3 -->
 
-            <div class="copyright">
-                <p>Copyrights@2023 All rights reserved</p>
-            </div><!-- /.copyrights -->               
+          </div>
+
+            <div class="col-md-3">
+               <div class="card">
+                  <img src="./assets/img/msp2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Microsoft Edge</h5>
+                    <p class="card-text">World-class performance with more privacy, more productivity and more value while you browse.</p>
+                   
+                     
+                    <a href="#" class="card-button">Download now ></a>
+                </div>
+              </div><!-- /.card -->
+              </div><!-- /.col-md-3 -->
+
+            <div class="col-md-3">
+               <div class="card">
+                  <img src="./assets/img/msp3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Microsoft OneDrive</h5>
+                    <p class="card-text">Save your files and photos to OneDrive and access them from any device, anywhere.</p>
+                    <a href="#" class="card-button">Learn more ></a>
+                </div>
+              </div><!-- /.card -->
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-md-3">
+               <div class="card">
+                  <img src="./assets/img/msp4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">OneNote</h5>
+                    <p class="card-text">Organise your notes and your life.</p>
+                    <a href="#" class="card-button">Learn more ></a>
+                </div>
+              </div><!-- /.card -->
+            </div><!-- /.col-md-3 -->
+
+           
+          </div><!-- /.row -->
+        </div>
+        </div><!-- /.product-wrapper -->
+       </div><!-- /.container -->
+
+       <div class="product-banner">
+          <div class="container">
+            <div class="product-inner-banner">
+
+             <img src="./assets/img/gldn-Hero-MSCOM-Outlook-iOS-Android_VP5-1596x600.jpg" class="img-fluid" alt="...">
+            
+             <div class="overlay">
+              <div class="container">
+                <div class="overlay-inner">
+                    <h1>Outlook for iOS and Android</h1>
+                    <p>Connect. Organise. Get things done.</p>
+                    <button type="button" class="btn btn-primary">Download now</button>
+              </div><!-- /.overlay-inner -->
+
+            </div><!-- /.product-inner-banner -->
+
+          </div><!-- /.container -->
+
+       </div><!-- /.product-banner -->
+
+
+      <div class="business-promo">
+          <div class="container">
+            <h1>For business</h1>
+
+            <div class="product-wrapper">
+
+              <div class="mt-2">
+                
+                <div class="row">
+                              
+                <div class="col-md-3"> 
+                   <div class="card">
+                      <img src="./assets/img/teams.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Get Microsoft Teams for free</h5>
+                        <p class="card-text">Online meetings, chat and shared cloud storage – all in one place.</p>
+                        <a href="#" class="card-button">Sign up for free</a>
+                    
+                  </div><!-- /.card -->
+                </div><!-- /.col-md-3 -->
+    
+              </div>
+    
+                <div class="col-md-3">
+                   <div class="card">
+                      <img src="./assets/img/ms365Call.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Try Microsoft 365 for free</h5>
+                        <p class="card-text"> Get Microsoft Teams, secure cloud storage and premium apps across devices with a free one-month Microsoft 365 Business Standard trial.                         
+                        <a href="#" class="card-button">Start your free trial ></a>
+                    </div>
+                  </div><!-- /.card -->
+                  </div><!-- /.col-md-3 -->
+    
+
+                <div class="col-md-3">
+                   <div class="card">
+                      <img src="./assets/img/365cloud.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Welcome to your Windows 365 Cloud PC</h5>
+                        <p class="card-text">Securely stream your Windows experience from the Microsoft cloud to any device.</p>
+                        <a href="#" class="card-button">Get it today ></a>
+                    </div>
+                  </div><!-- /.card -->
+                </div><!-- /.col-md-3 -->
+
+
+                <div class="col-md-3">
+                   <div class="card">
+                      <img src="./assets/img/msviva.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Empower people and teams with Microsoft Viva</h5>
+                        <p class="card-text">Bring together connection, purpose, insight and growth with the first employee experience platform built for the hybrid era</p>
+                        <a href="#" class="card-button">Learn more about Microsoft Viva ></a>
+                    </div>
+                  </div><!-- /.card -->
+                 </div><!-- /.col-md-3 -->
+    
+               
+              </div><!-- /.row -->
+            </div>
+
+            <div class="social-link">
+              <div class="internal-link">
+                <ul> 
+                  <li>Follow Microsoft </li>
+                  <li><img src="./assets/img/Facebook.png"></li>
+                  <li><img src="./assets/img/Twitter.png"></li>
+                  <li><img src="./assets/img/Linkedin.png"></li>
+                  
+                </ul> 
+            
+                
+
+              </div><!-- /.internal-link -->
+            </div><!-- /.social-link -->
+
+           <div class="sticky-sm-top"><a href="#">Back to sticky-lg-top</a></div>
+           
+           </div><!-- /.product-wrapper -->
+
+
+          </div><!-- /.container -->
+       </div><!-- /.business-promo -->
         
-              
-    
-       </section><!-- /.footer -->
+      </div><!-- /.main -->
 
-    </div><!-- /.site-wrapper -->
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="inner-footer">
+              <div class="col-md-2">
+                <div class="heading-4"><h6>Microsoft Store</h6></div>
+                 <ul class="p-list">
+                   <li>Account profile</li>
+                   <li>Download Center</li>
+                   <li>Returns</li>
+                   <li>Order tracking</li>
+                 </ul>
+               </div><!-- /.col-md-2 -->
+               <div class="col-md-2">
+                <div class="heading-4"><h6>Education</h6></div>
+                  <ul class="p-list">
+                  <li>Microsoft in education</li>
+                  <li>Devices for education</li>
+                  <li>Microsoft Teams for Education</li>
+                  <li>Microsoft 365 Education</li>
+                  <li>Office Education</li>
+                  <li>Educator training and development</li>
+                  <li>Deals for students and parents</li>
+                  <li>Azure for students</li>
+                </ul>
+              </div><!-- /.col-md-2 -->
   
-   
+              <div class="col-md-2">
+                <div class="heading-4"><h6>Business</h6></div>
+                  <ul class="p-list">
+                   <li>Account profile</li>
+                   <li>Download Center</li>
+                   <li>Returns</li>
+                   <li>Order tracking</li>
+                 </ul>
+              </div><!-- /.col-md-2 -->
+              
+              <div class="col-md-2">
+                <div class="heading-4"><h6>Developer & IT</h6></div>
+                <ul class="p-list">
+                  <li>Developer Center</li>
+                  <li>Documentation</li>
+                  <li>Microsoft Learn</li>
+                  <li>Microsoft Tech Community</li>
+                  <li>Azure Marketplace</li>
+                  <li>AppSource</li>
+                  <li>Microsoft Power Platform</li>
+                  <li>Visual Studio</li>
+                </ul>
+              </div><!-- /.col-md-2 -->
+  
+  
+              <div class="col-md-2">
+                <div class="heading-4"><h6>Company</h6></div>
+                  <ul class="p-list">
+                    <li>Careers</li>
+                    <li>About Microsoft</li>
+                    <li>Company news</li>
+                    <li>Privacy at Microsoft</li>
+                    <li>Investors</li>
+                    <li>Sustainability</li>
+                  </ul>                                     
+  
+          </div><!-- /.inner-footer -->
+          
+        </div><!-- /.footer-row -->  
+        </div><!-- /.container -->
+
+        <div class="container">
+           <nav class="loc-nav">
+              <ul>
+>             <li>English (Pakistan)</li>
+              </ul>           
+             <nav class="btm-link">
+              <ul>
+                <li>Contact Microsoft </li>
+                <li>Privacy</li>
+                <li>Terms of use </li>
+                <li>Trademarks </li>
+                <li>About our ads</li>
+                <li>© Microsoft 2023</li>
+              </ul>
+             </nav>
+            
+            </loc-nav>
+            </div><!-- /.btm-link -->
+        </div>
+
+        
+        <!-- /.container -->
 
 
+
+      </div><!-- /.footer -->
+            
+
+    </div><!-- /.sitewrapper -->
+      
     
-</body>
+  </body>
 </html>
